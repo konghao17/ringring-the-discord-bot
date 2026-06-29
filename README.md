@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 專案動機
+##  專案動機
 
 在使用 Discord 管理日常事務與與朋友溝通的過程中，發現缺乏一個輕量、直覺的工具型 Bot。
 RingRing 的目標是讓使用者不需要離開 Discord，就能完成提醒設定、即時資訊查詢與簡單的群體互動。
@@ -18,9 +18,9 @@ RingRing 的目標是讓使用者不需要離開 Discord，就能完成提醒設
 
 ---
 
-## ✨ 功能模組
+##  功能模組
 
-### 🕐 Module 1 — 提醒系統（Reminder）
+###  Module 1 — 提醒系統（Reminder）
 | 指令 | 說明 | 範例 |
 |------|------|------|
 | `!remind <時間> <內容>` | 設定倒數提醒 | `!remind 30m 去吃飯` |
@@ -31,7 +31,7 @@ RingRing 的目標是讓使用者不需要離開 Discord，就能完成提醒設
 
 ---
 
-### 🌤️ Module 2 — 資料查詢（Data Fetch）
+###  Module 2 — 資料查詢（Data Fetch）
 | 指令 | 說明 | 範例 |
 |------|------|------|
 | `!weather <城市>` | 查詢即時天氣 | `!weather 台北` |
@@ -41,7 +41,7 @@ RingRing 的目標是讓使用者不需要離開 Discord，就能完成提醒設
 
 ---
 
-### 🛠️ Module 3 — 實用工具（Utilities）
+###  Module 3 — 實用工具（Utilities）
 | 指令 | 說明 | 範例 |
 |------|------|------|
 | `!ping` | 顯示 Bot 當前延遲 | `!ping` |
@@ -50,25 +50,25 @@ RingRing 的目標是讓使用者不需要離開 Discord，就能完成提醒設
 
 ---
 
-## 🏗️ 技術架構
+##  技術架構
 
 ```
 ringring/
-├── main.py              # Bot 進入點，載入所有 Cog
+├── main.py             
 ├── cogs/
-│   ├── reminder.py      # 提醒模組（asyncio）
-│   ├── datafetch.py     # API 查詢模組
-│   └── utilities.py     # 工具指令模組
+│   ├── reminder.py      
+│   ├── datafetch.py     
+│   └── utilities.py    
 ├── utils/
-│   └── time_parser.py   # 時間格式解析工具
-├── .env                 # Token 與 API Key（不上傳）
+│   └── time_parser.py   
+├── .env                 
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 🧰 使用技術
+##  使用技術
 
 - **語言**：Python 3.11
 - **主框架**：[discord.py 2.3](https://discordpy.readthedocs.io/)
@@ -79,7 +79,7 @@ ringring/
 
 ---
 
-## 📚 開發過程與學習紀錄
+##  開發過程與學習紀錄
 
 | 階段 | 內容 | 學到的概念 |
 |------|------|------------|
@@ -92,7 +92,7 @@ ringring/
 
 ---
 
-## 🚀 本地執行方式
+##  本地執行方式
 
 ```bash
 # 1. 複製專案
@@ -112,7 +112,7 @@ python main.py
 
 ---
 
-## 📋 requirements.txt
+##  requirements.txt
 
 ```
 discord.py==2.3.2
@@ -122,7 +122,7 @@ python-dotenv==1.0.0
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [x] 專案架構規劃
 - [x] `!ping` 基礎指令
